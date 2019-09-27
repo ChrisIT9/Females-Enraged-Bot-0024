@@ -1,0 +1,27 @@
+{
+  "name": "hoesmadbot",
+  "version": "1.0.0",
+  "description": "hoes mad bot lmao",
+  "main": "bot.js",
+  "dependencies": {
+    "canvas": "^2.5.0",
+    "cloudinary": "^1.14.0",
+    "dotenv": "^8.1.0",
+    "fb": "^2.0.0",
+    "fs": "0.0.1-security",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "hoesmadbot"
+  },
+  "keywords": [
+    "hoes"
+  ],
+  "author": "chris",
+  "license": "ISC"
+}
