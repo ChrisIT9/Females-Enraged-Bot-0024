@@ -49,14 +49,16 @@
     
     var width, height;
 
-    r = argv.r != null ? argv.r : 255;
-    g = argv.g != null ? argv.g : 255;
-    b = argv.b != null ? argv.b : 255;
+    r = (argv.r != null && argv.r >= 0 && argv.r <= 255) ? argv.r : 255;
+    g = (argv.g != null && argv.g >= 0 && argv.g <= 255) ? argv.g : 255;
+    b = (argv.b != null && argv.b >= 0 && argv.b <= 255) ? argv.b : 255;
 
     width = argv.width != null ? argv.width : 510;
     height = argv.height != null ? argv.height : 180;
 
     var fontSize = ((width + height) * 0.051).toString();
+
+    var fileName = (argv.filename != null ? argv.filename : "feb_final_image");
 
     
 
@@ -375,8 +377,8 @@
         try {
             drawCanvas(r, g, b, width, height); // draw a 510x180 white canvas (default settings)
             writeText();
-            createPNG(argv.filename != null ? argv.filename : "hoesmad");
-            if (argv.u) uploadToCloudinary("hoesmad"); // uploads the png. the argument is the name of the file.*/
+            createPNG(fileName);
+            if (argv.u) uploadToCloudinary(fileName); // uploads the png. the argument is the name of the file.*/
         } catch(e) {
             console.log(e);
         }
