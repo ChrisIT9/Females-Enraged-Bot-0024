@@ -55,6 +55,11 @@ node bot.js --filename "my image"
 
 --rapname: Rap name to be used for the hook. (Randomized by default). 
 
+Example: 
+``` 
+node bot.js --name "Github" --adjective "Nice" --times 99 --rapname "Lil Biggie"
+```
+
 
 -u: If provided, it'll try to upload the image to Cloudinary and then to Facebook. Won't work if you don't have an .env file with the required fields in it (Off by default).
 
