@@ -23,24 +23,41 @@ After you're done you're pretty much good to go.
 The bot accepts the following command line arguments (you can run the bot without any of them and it'll just use the default settings):
 
 --width: Width of the canvas (default: 510).
+
 --height: Height of the canvas (default: 180).
 
+
 --r: 0-255 value for the red value (this controls the background color, default is 255).
+
 --g: 0-255 value for the green value (this controls the background color, default is 255).
+
 --b: 0-255 value for the blue value (this controls the background color, default is 255).
 
+Example: 
+``` 
+node bot.js --r 130 --g 40 --b 192
+```
+
+
 --filename: Name of the image to be saved (without the extension, default is feb_final_image). 
+
 Example: 
 ``` 
 node bot.js --filename "my image" 
 ```
 
+
 --name: Name to be used for the hook. (Randomized by default).
+
 --adjective: Adjective to be used for the hook. (Randomized by default).
+
 --times: Number of times to be used for the hook. (Randomized by default).
+
 --rapname: Rap name to be used for the hook. (Randomized by default). 
 
+
 -u: If provided, it'll try to upload the image to Cloudinary and then to Facebook. Won't work if you don't have an .env file with the required fields in it (Off by default).
+
 Example: 
 ``` 
 node bot.js -u
@@ -60,10 +77,15 @@ If you want to use the uploading capabilities of the bot, you're gonna need to s
 You're going to want to setup your .env file like this:
 
 FB_API_KEY=YOUR FACEBOOK API KEY
+
 CLOUDINARY_CLOUD_NAME=YOUR CLOUDINARY CLOUD NAME
+
 CLOUDINARY_API_KEY=YOUR CLOUDINARY API KEY
+
 CLOUDINARY_API_SECRET=YOUR CLOUDINARY API SECRET
+
 FB_PAGE_ID=YOUR FACEBOOK PAGE ID
+
 
 # Other stuff
 
