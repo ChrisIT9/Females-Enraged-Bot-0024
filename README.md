@@ -35,7 +35,7 @@ The bot accepts the following command line arguments (you can run the bot withou
 
 Example: 
 ``` 
-node bot.js --r 130 --g 40 --b 192
+node bot.js --width 1200 --height 650 --r 130 --g 40 --b 192
 ```
 
 
@@ -60,8 +60,7 @@ Example:
 node bot.js --name "Github" --adjective "Nice" --times 99 --rapname "Lil Biggie"
 ```
 
-
--u: If provided, it'll try to upload the image to Cloudinary and then to Facebook. Won't work if you don't have an .env file with the required fields in it (Off by default).
+-u: If provided, the bot will try to upload the image to Cloudinary and then to Facebook. Won't work if you don't have an .env file with the required fields in it. (Off by default).
 
 Example: 
 ``` 
