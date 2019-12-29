@@ -93,4 +93,4 @@ FB_PAGE_ID=YOUR FACEBOOK PAGE ID
 
 # Other stuff
 
-I'm using Priori Sans to draw the hook text on the canvas, however this is not included in the repository. To use it just install it as a system font or include it in the ".fonts" as a .ttf file.
+I'm using Priori Sans to draw the hook text on the canvas, however this is not included in the repository. To use it just install it as a system font or include it in the ".fonts" folder as a .ttf file.
