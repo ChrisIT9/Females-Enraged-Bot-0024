@@ -53,8 +53,9 @@
     g = (argv.g != null && argv.g >= 0 && argv.g <= 255) ? argv.g : 255;
     b = (argv.b != null && argv.b >= 0 && argv.b <= 255) ? argv.b : 255;
 
-    width = argv.width != null ? argv.width : 510;
-    height = argv.height != null ? argv.height : 180;
+    
+    width = (argv.width != null && !isNaN(argv.width) && argv.width > 0) ? argv.width : 510;
+    height = (argv.height != null && !isNan(argv.height) && argv.height > 0) ? argv.height : 180;
 
     var fontSize = ((width + height) * 0.051).toString();
 
