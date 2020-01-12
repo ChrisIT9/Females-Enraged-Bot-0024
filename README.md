@@ -4,16 +4,10 @@ You can do whatever you want with this, crediting is not required.
 
 # Required node modules
 
-You're gonna need to install these modules to run the bot:
+You're gonna need to install the required modules to run the bot:
 
 ```
-npm i fb
-npm i canvas
-npm i cloudinary
-npm i sqlite3
-npm i minimist
-npm i chance
-npm i dotenv
+npm i
 ```
 
 After you're done you're pretty much good to go.
