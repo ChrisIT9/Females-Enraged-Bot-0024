@@ -10,7 +10,7 @@
     "dotenv": "^8.1.0",
     "fb": "^2.0.0",
     "fs": "0.0.1-security",
-    "minimist": "^1.2.3",
+    "minimist": "^1.2.6",
     "node-pre-gyp": "^0.14.0",
     "sqlite3": "^4.1.1"
   },
